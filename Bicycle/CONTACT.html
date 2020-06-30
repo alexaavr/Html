@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bicycles</title>
+    <link rel="icon" href="IMG/LOGO.jpg" type="image/gif" sizes="16x16">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="CSS/style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="modal.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/yourcode.js"></script>
+</head>
+<header class="header">
+    <h1 style="margin-left: 100px"><img class="header-image" src="IMG/LOGO.jpg" alt="logo"><a class="header-logo" href="index.html">Bicycles</a></h1>
+</header>
+
+<nav class="navbar navbar-expand-lg  navbar-dark navbar-custom">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+                <a class="nav-link" href="HOME.html">Home</a>
+            </li>
+            <li class="nav-item ">
+                <a class="nav-link" href="PAG1.html">Istoria bicicletelor</a>
+            </li>
+            <li class="nav-item ">
+                <a class="nav-link" href="PAG2.html">Ciclism</a>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="PRODUSE.html" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Produse
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="PRODUSE.html">Prezentare</a>
+                    <a class="dropdown-item" href="CAT1.html">Biciclete adulți</a>
+                    <a class="dropdown-item" href="CAT2.html">Biciclete copii</a>
+                </div>
+            </li>
+            <li class="nav-item active">
+                <a class="nav-link" href="CONTACT.html">Contact<span class="sr-only">(current)</span></a>
+            </li>
+        </ul>
+    </div>
+</nav>
+<body class="body">
+<h2 class="h1">Conctactează-ne!</h2>
+    <div class="container">
+        <div class="row">
+                <div class="col-md form-center">
+                    <div class="afis-contact map">
+                    <form style="text-align: left;" action="mailto:alexandra.avarm99@yahoo.com" method="get">
+                        <div class="form-group">
+                            <label>Subject:</label><br>
+                            <input type="text"  id="subject" placeholder="Your subject">
+                        </div>
+                        <div class="form-group">
+                            <label>CC:</label><br>
+                            <input type="text"  id="CC" placeholder="CC">
+                        </div>
+                        <div class="form-group">
+                            <label>BCC:</label><br>
+                            <input type="text" id="BCC" placeholder="BCC">
+                        </div>
+                        <div class="form-group">
+                            <label>Body:</label><br>
+                            <input type="text"id="body" placeholder="Body">
+                        </div>
+                        <button type="submit" class="btn btn-primary" onclick="myFunction()">Send mail</button>
+                    </form>
+                    <script>
+                        function myFunction() {
+                            var input = document.getElementById('subject');
+                            subject = input.value;
+                            var input = document.getElementById('body');
+                            body = input.value;
+                            window.location.href = "mailto:alexandra.avram99@yahoo.com" + "?subject=" + subject + "&body=" + body;
+                        }
+                    </script>
+                </div>
+            </div>
+
+            <div class="col-md">
+                <div class="map-responsive map" style="margin-top: 25px">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d11261.905570143397!2d25.924578141848112!3d45.11668125755566!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40b3add03e8ff2a9%3A0x3f9fd7c1a8b11be0!2zQ29tdW5hIFbDomxjxINuZciZdGk!5e0!3m2!1sro!2sro!4v1593024925080!5m2!1sro!2sro"
+                            padding = "10px" width="490" height="370" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+<div class="container icon-media">
+        <a href="https://www.facebook.com/"><i class="fa fa-facebook"></i></a>
+        <a href="https://www.linkedin.com/"><i class="fa fa-linkedin"></i></a>
+        <a href="https://www.youtube.com/"><i class="fa fa-youtube"></i></a>
+        <a href="https://www.instagram.com/"><i class="fa fa-instagram"></i></a>
+</div>
+</body>
+<footer class="footer">
+    <nav aria-label="Page navigation example">
+        <ul class="pagination justify-content-center pg">
+            <li class="page-item"><a class="page-link" href="CAT2.html">Previous</a></li>
+            <li class="page-item"><a class="page-link" href="CAT2.html">6</a></li>
+            <li class="page-item active"><a class="page-link" href="CONTACT.html">7</a></li>
+            <li class="page-item"><a class="page-link" href="HOME.html">1</a></li>
+            <li class="page-item"><a class="page-link" href="HOME.html">Next</a></li>
+        </ul>
+    </nav>
+    <p class="t">Copyright &copy 23.03.2020 Bicycles by Alexandra Avram. All Rights Reserved.</p>
+</footer>
+</html>

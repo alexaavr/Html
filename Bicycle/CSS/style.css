@@ -1,0 +1,266 @@
+.body{
+    background-image: url("../IMG/bb.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.header {
+    position:relative;
+    width:100%;
+    height:15%;
+    background: transparent;
+    -webkit-text-fill-color: inherit;
+    padding: 10px;
+}
+.header-image {
+    width: 50px;
+    height: 50px;
+}
+.header-logo{
+    font-family: Verdana;
+    font-size: 30px;
+    padding: 5px;
+    -webkit-text-fill-color: white;
+}
+
+.footer {
+    position:relative;
+    bottom: 0;
+    padding:5px;
+    width:100%;
+    height:15%;
+    background:transparent;
+    -webkit-text-fill-color:inherit;
+}
+.t{
+    font-family: Verdana;
+    font-size: 14px;
+    text-align: left;
+    padding: 20px;
+    -webkit-text-fill-color: white;
+    text-align: center;
+}
+
+/*pagination*/
+.pg li a{
+    background-color: transparent!important;
+    color: white!important;
+}
+
+
+/* Create two equal columns that floats next to each other */
+.column {
+    float: left;
+    width: 50%;
+    padding: 10px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/*home page*/
+
+.afis{
+    width: 88%;
+    height:90%;
+    margin: 25px auto;
+    background-color: #121212;
+    padding: 10px 10px;
+    box-shadow: 0 4px 6px #000;
+    text-align:left;
+    text-indent: 50px;
+    color:white;
+    border-radius:20px;
+}
+.afis-contact{
+    width: 100%;
+    height:100%;
+    margin: 25px auto;
+    background-color: #121212;
+    padding: 10px 10px;
+    text-align:center;
+    color:white;
+    box-shadow: 0 4px 6px #000;
+    border-radius:20px;
+    align-items: center;
+}
+
+/*img din tabel*/
+.img {
+    width: 90%;
+    height: 80%;
+    object-fit: fill;
+    border-radius: 10px;
+    text-align-all: center;
+}
+.h1{
+    font-family: Verdana;
+    font-size: 16px;
+    text-align: center;
+    padding: 20px;
+    -webkit-text-fill-color: white;
+}
+
+.text{
+    font-family: Verdana;
+    font-size: 14px;
+    text-indent: 50px;
+    text-align: left;
+    padding: 20px;
+    margin-left: 50px;
+    margin-right: 50px;
+    -webkit-text-fill-color: white;
+}
+
+.carousel {
+    /* any dimensions are fine, it can be responsive with max-width */
+    height: 300px;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+.carousel-inner {
+    /* make sure your .items will get correct height */
+    height: 100%;
+    width: 100%;
+}
+
+.carousel-item{
+    width: 90%;
+}
+.carousel-item img
+{
+    height: 270px;
+}
+
+.navbar-custom {
+    background-color: #121212;
+    margin-left: 100px;!important;
+    margin-right: 100px;!important;
+}
+
+.btn-custom {
+    background-color: #121212;!important;
+}
+.img {
+    width: 100%;
+    height: 300px;
+    padding: 25px;
+    object-fit: fill;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 0!important;
+}
+.img-solo {
+    width: 100%;
+    height: 325px;
+    padding: 25px;
+    object-fit: fill;
+    border-radius: 50px;
+    object-position: center;
+}
+
+.img-prod {
+    width: 100%;
+    height: 425px;
+    padding: 25px;
+    object-fit: fill;
+    border-radius:50px;
+    object-position: center;
+    display: flex;
+    align-items: center;
+}
+.cont {
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+.gallery{
+    margin-left: 100px;
+    margin-right: 100px;
+}
+.gallery img{
+    transition: 1s;
+    padding: 15px;
+}
+.gallery img:hover{
+    filter: grayscale(100%);
+    transform: scale(1.1);
+}
+.fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+    border-radius: 50%;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-facebook {
+    background: #3B5998;
+    color: white;
+}
+.fa-linkedin {
+    background: #007bb5;
+    color: white;
+}
+
+.fa-youtube {
+    background: #bb0000;
+    color: white;
+}
+
+.fa-instagram {
+    background: #125688;
+    color: white;
+}
+
+.btn:focus, .btn:active, button:focus, button:active {
+    outline: none !important;
+    box-shadow: none !important;
+}
+
+#image-gallery .modal-footer{
+    display: block;
+}
+
+.thumb{
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.modal-custom {
+    background-color: transparent;
+    width: auto;
+}
+
+.imgg{
+    width: auto;!important;
+}
+
+.icon-media{
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+}
+
+.form-center{
+    display: flex;
+    justify-content: left;
+    margin: auto;
+}
+
+.map{
+    display: flex;
+    justify-content: center;
+}
